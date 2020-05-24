@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="392.0" prefWidth="745.0" style="-fx-background-color: #20120F;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.LoginBlackController">
+   <children>
+      <AnchorPane layoutX="414.0" layoutY="35.0" prefHeight="313.0" prefWidth="286.0" style="-fx-background-color: #9B2c27;">
+         <children>
+            <TextField layoutX="25.0" layoutY="103.0" prefHeight="30.0" prefWidth="236.0" promptText="username/email" style="-fx-border-color: #fff; -fx-border-width: 0 0 2px 0; -fx-background-color: #9B2c27;" />
+            <PasswordField layoutX="25.0" layoutY="162.0" prefHeight="30.0" prefWidth="236.0" promptText="password" style="-fx-background-color: #9B2c27; -fx-border-color: #fff; -fx-border-width: 0 0 2px 0;" />
+            <Button layoutX="75.0" layoutY="228.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="137.0" style="-fx-background-color: #BD3836;" styleClass="btnSingIn" stylesheets="@../styles/login.css" text="Sign in" textFill="#fcfcfc" />
+            <Hyperlink layoutX="79.0" layoutY="268.0" text="Forgot your password?" textAlignment="CENTER" textOverrun="CLIP" underline="true" />
+            <Label layoutX="107.0" layoutY="34.0" text="Sing in" textAlignment="CENTER" textFill="#fffefe">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="268.0" fitWidth="364.0" layoutX="21.0" layoutY="70.0" opacity="0.45" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagen/xxd.jpeg" />
+         </image>
+      </ImageView>
+      <Box />
+      <Button fx:id="btnExit" layoutX="700.0" layoutY="4.0" mnemonicParsing="false" onAction="#Exit" prefHeight="32.0" prefWidth="29.0" style="-fx-background-color: #20120F;" text="X">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="69.0" layoutY="225.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: #BD3836;" styleClass="btnSingIn" stylesheets="@../styles/login.css" text="Sing up" textFill="#fcfcfc" />
+      <Label layoutX="69.0" layoutY="119.0" prefHeight="17.0" prefWidth="198.0" text="Bienvenido" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="162.0" text="Registrate y forma parte de nosotros" textFill="#f5ecec" />
+   </children>
+</AnchorPane>
